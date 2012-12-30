@@ -1,0 +1,30 @@
+<h1>Listing Crunched IPOs</h1>
+
+<table>
+  <tr>
+    <th>Company name</th>
+    <th>Posts</th>
+    <th>Year</th>
+    <th>Valuation</th>
+    <th>Ticker</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @crunch_companies.each do |crunch_company| %>
+  <tr>
+    <td><%= crunch_company.company_name %></td>
+    <td><%= crunch_company.posts %></td>
+    <td><%= crunch_company.ipo_year %></td>
+    <td><%= crunch_company.ipo_valuation %></td>
+    <td><%= crunch_company.ipo_ticker %></td>
+    <td><%= link_to 'Show', crunch_company %></td>
+    <td><%= link_to 'Edit', edit_crunch_company_path(crunch_company) %></td>
+    <td><%= link_to 'Destroy', crunch_company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Crunch IPO', new_crunch_company_path %>

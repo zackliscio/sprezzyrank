@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Company name:</b>
+  <%= @crunch_company.company_name %>
+</p>
+
+<p>
+  <b>Posts:</b>
+  <%= @crunch_company.posts %>
+</p>
+
+<p>
+  <b>IPO Year:</b>
+  <%= @crunch_company.ipo_year %>
+</p>
+
+<p>
+  <b>Valuation:</b>
+  <%= @crunch_company.ipo_valuation %>
+</p>
+
+<p>
+  <b>Ticker:</b>
+  <%= @crunch_company.ipo_ticker %>
+</p>
+
+<%= link_to 'Edit', edit_crunch_company_path(@crunch_company) %> |
+<%= link_to 'Back', crunch_companies_path %>

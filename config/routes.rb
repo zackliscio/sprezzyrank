@@ -1,4 +1,6 @@
 Sprezzyrank::Application.routes.draw do
+  resources :crunch_companies
+
   authenticated :user do
     root :to => 'home#index'
   end
