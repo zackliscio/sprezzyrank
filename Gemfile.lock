@@ -35,6 +35,10 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.7.0)
     binding_of_caller (0.6.8)
+    bson (1.8.0)
+      activesupport
+    bson_ext (1.8.0)
+      bson (~> 1.8.0)
     builder (3.0.4)
     capybara (2.0.1)
       mime-types (>= 1.16)
@@ -215,6 +219,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors (>= 0.3.2)
   binding_of_caller (>= 0.6.8)
+  bson_ext
   capybara (>= 2.0.1)
   coffee-rails (~> 3.2.1)
   crunchbase (~> 0.3.0)
