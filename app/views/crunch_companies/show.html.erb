@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Company name:</b>
-  <%= @crunch_company.company_name %>
-</p>
+<!-- begin ipo wrapper -->
+<div id = "ipo_wrapper">
+
+<div id = "crunch_company">
+  <h1><%= @crunch_company.company_name %></h1>
+</div>
 
 <p>
   <b>Posts:</b>
@@ -27,3 +29,5 @@
 
 <%= link_to 'Edit', edit_crunch_company_path(@crunch_company) %> |
 <%= link_to 'Back', crunch_companies_path %>
+</div>  
+<!-- end ipo wrapper -->

@@ -1,3 +1,47 @@
 // Place all the styles related to the crunchCompanies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "mixins";
+
+$white: white;
+$blue: #8FD8D8;
+
+#crunch_company{
+  
+  color: $blue;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+
+}
+
+#ipo_wrapper{
+@include rounded(20px);
+	background: $white;
+	padding: 20px;
+	width: 30%;
+}
+
+#index_companies{
+  
+  color: $blue;
+  padding: 0px 10px 20px 10px;
+  text-align: center;
+
+}
+
+#index_wrapper{
+@include rounded(20px);
+	background: $white;
+	padding: 20px;
+}
+
+#company_index_table{
+
+}
+
+	td{
+	text-align:left;
+	margin-right:20px;
+	padding-right:20px;
+	}

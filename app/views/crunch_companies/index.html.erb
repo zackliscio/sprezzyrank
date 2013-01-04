@@ -1,6 +1,9 @@
-<h1>Listing Crunched IPOs</h1>
 
-<table>
+<div id = "index_wrapper">
+<div id = "index_companies">
+<h1>Listing Crunched IPOs</h1>
+</div>
+<table id ="company_index_table">
   <tr>
     <th>Company name</th>
     <th>Posts</th>
@@ -8,7 +11,7 @@
     <th>Valuation</th>
     <th>Ticker</th>
     <th></th>
-    <th></th>
+    <th></th> 
   </tr>
 
 <% @crunch_companies.each do |crunch_company| %>
@@ -28,3 +31,5 @@
 <br />
 
 <%= link_to 'New Crunch IPO', new_crunch_company_path %>
+
+</div>

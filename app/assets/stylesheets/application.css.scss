@@ -11,6 +11,13 @@
  *= require_self
  *= require_tree .
 */
+
+@import "mixins";
+
+body{
+  background-image: url(/assets/gray_jean.png);
+}
+
 .brand {
   float: left;
   padding-right: 8px;
@@ -35,3 +42,5 @@ ul.nav li {
   background-color: #FCC;
   border: solid 1px #C66;
 }
+
+
