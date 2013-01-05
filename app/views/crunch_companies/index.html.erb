@@ -32,4 +32,12 @@
 
 <%= link_to 'New Crunch IPO', new_crunch_company_path %>
 
+<%= form_tag(crunch_crunch_companies_path, :method => "get") do %>
+  <%= label_tag(:company_name, "Crunch company:") %>
+  <%= text_field_tag(:company_name) %>
+  <%= submit_tag("Crunch") %>
+<% end %>
+
+
+
 </div>
